@@ -87,8 +87,8 @@ div.content {
 
         <div class="sidebar">
             <a class="active" href="#home">Главная</a>
-            <a href="#news">Студент</a>
-            <a href="#contact">Учитель</a>
+            <a href="{{ url('/students') }}">Студент</a>
+            <a href="{{ url('/teachers') }}">Учитель</a>
             <a href="#contact">Курсы</a>
             <a href="#about">Зачисление</a>
             <a href="#about">Оплата</a>
