@@ -9,8 +9,16 @@
         {!! csrf_field() !!}
         <label>Название группы</label></br>
         <input type="text" name="name" id="name" class="form-control"></br>
-        <label>Название курса</label></br>
-        <input type="text" name="course_id" id="course_id" class="form-control"></br>
+
+        <label>Курс</label></br>
+        <!-- <input type="text" name="course_id" id="course_id" class="form-control"></br> -->
+
+        <select name="course_id" id="course_id" class="form-control">
+          @foreach($courses as $id => $name)
+            <option value="{{ $id }}">{{ $name }}</option>
+          @endforeach
+        </select></br>
+
         <label>Дата начала</label></br>
         <input type="text" name="start_date" id="start_date" class="form-control"></br>
         <input type="submit" value="Сохранить" class="btn btn-success"></br>

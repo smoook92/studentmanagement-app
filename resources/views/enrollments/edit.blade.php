@@ -24,7 +24,7 @@
 
         <label>Плата за обучение</label></br>
         <input type="text" name="fee" id="fee" class="form-control" value="{{$enrollments->fee}}"></br>
-        <input type="submit" value="Сохранить" class="btn btn-success"></br>
+        <input type="submit" value="Обновить" class="btn btn-success"></br>
     </form>
    
   </div>

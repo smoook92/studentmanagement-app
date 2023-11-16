@@ -9,7 +9,7 @@
  
         <div class="card-body">
         <h5 class="card-title">Название : {{ $batches->name }}</h5>
-        <p class="card-text">Курс : {{ $batches->course_id }}</p>
+        <p class="card-text">Курс : {{ $batches->course->name }}</p>
         <p class="card-text">Дата начала : {{ $batches->start_date }}</p>
   </div>
        

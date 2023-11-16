@@ -16,7 +16,7 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Регистрационный номер</th>
+                            <th>Рег. номер</th>
                             <th>Дата зачисления</th>
                             <th>Студент</th>
                             <th>Дата вступления</th>
@@ -29,8 +29,8 @@
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $item->enroll_no }}</td>
-                            <td>{{ $item->batch_id }}</td>
-                            <td>{{ $item->student_id }}</td>
+                            <td>{{ $item->batch->name }}</td>
+                            <td>{{ $item->student->name }}</td>
                             <td>{{ $item->join_date }}</td>
                             <td>{{ $item->fee }}</td>
 

@@ -28,16 +28,16 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->syllabus }}</td>
-                            <td>{{ $item->duration }}</td>
+                            <td>{{ $item->duration() }}</td>
 
                             <td>
-                                <a href="{{ url('/courses/' . $item->id) }}" title="Посмотреть курс"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> Посмотреть</button></a>
-                                <a href="{{ url('/courses/' . $item->id . '/edit') }}" title="Редактировать курс"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Редактировать</button></a>
+                                <a href="{{ url('/courses/' . $item->id) }}" title="Посмотреть курс"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> 🔍</button></a>
+                                <a href="{{ url('/courses/' . $item->id . '/edit') }}" title="Редактировать курс"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> ✏️</button></a>
 
                                 <form method="POST" action="{{ url('/courses' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
                                     {{ method_field('DELETE') }}
                                     {{ csrf_field() }}
-                                    <button type="submit" class="btn btn-danger btn-sm" title="Удалить курс" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Удалить</button>
+                                    <button type="submit" class="btn btn-danger btn-sm" title="Удалить курс" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> ⌫</button>
                                 </form>
                             </td>
                         </tr>
