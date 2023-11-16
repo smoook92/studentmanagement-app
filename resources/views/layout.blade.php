@@ -92,7 +92,7 @@ div.content {
             <a href="{{ url('/courses') }}">Курсы</a>
             <a href="{{ url('/batches') }}">Группы</a>
             <a href="{{ url('/enrollments') }}">Зачисление</a>
-            <a href="#about">Оплата</a>
+            <a href="{{ url('/payments') }}">Оплата</a>
         </div>
     </div>
 

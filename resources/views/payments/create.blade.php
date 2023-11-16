@@ -5,12 +5,13 @@
   <div class="card-header">Платежи</div>
   <div class="card-body">
       
-      <form action="{{ url('batches') }}" method="post">
+      <form action="{{ url('payments') }}" method="post">
         {!! csrf_field() !!}
+
         <label>Рег. номер</label></br>
         <select name="enrollment_id" id="enrollment_id" class="form-control">
-          @foreach($payments as $id => $enrollno)
-            <option value="{{ $id }}">{{ $enrollno }}</option>
+          @foreach($enrollments as $id => $enroll_no)
+            <option value="{{ $id }}">{{ $enroll_no }}</option>
           @endforeach
         </select></br>
 
@@ -20,7 +21,7 @@
 
         <label>Сумма</label></br>
         <input type="text" name="amount" id="amount" class="form-control"></br>
-        
+
         <input type="submit" value="Сохранить" class="btn btn-success"></br>
     </form>
    
