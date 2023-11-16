@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\RedirectResponse;
 use Illuminate\Http\Response;
 use App\Models\Enrollment;
 use Illuminate\View\View;

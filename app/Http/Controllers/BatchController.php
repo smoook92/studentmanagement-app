@@ -27,8 +27,6 @@ class BatchController extends Controller
     {
         $courses = Course::pluck('name','id');
         return view('batches.create', compact('courses'));
-
-        //return view('batches.create');
     }
 
     /**
