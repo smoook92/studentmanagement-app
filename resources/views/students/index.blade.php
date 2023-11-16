@@ -7,7 +7,7 @@
         </div>
         <div class="card-body">
             <a href="{{ url('/students/create') }}" class="btn btn-success btn-sm" title="Добавить нового студента">
-                <i class="fa fa-plus" aria-hidden="true"></i> Добавить нового
+                <i class="fa fa-plus" aria-hidden="true"></i> Добавить Студента
             </a>
             <br/>
             <br/>

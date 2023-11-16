@@ -7,7 +7,7 @@
         </div>
         <div class="card-body">
             <a href="{{ url('/courses/create') }}" class="btn btn-success btn-sm" title="Добавить новый курс">
-                <i class="fa fa-plus" aria-hidden="true"></i> Добавить новый
+                <i class="fa fa-plus" aria-hidden="true"></i> Добавить Курс
             </a>
             <br/>
             <br/>
