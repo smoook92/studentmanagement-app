@@ -86,7 +86,7 @@ div.content {
     <div class="col-md-3">
 
         <div class="sidebar">
-            <a class="active" href="#home">Главная</a>
+            <!-- <a class="active" href="#home">Главная</a> -->
             <a href="{{ url('/students') }}">Студент</a>
             <a href="{{ url('/teachers') }}">Учитель</a>
             <a href="{{ url('/courses') }}">Курсы</a>
