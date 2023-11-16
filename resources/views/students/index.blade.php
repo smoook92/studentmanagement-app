@@ -31,13 +31,13 @@
                             <td>{{ $item->mobile }}</td>
 
                             <td>
-                                <a href="{{ url('/students/' . $item->id) }}" title="Посмотреть студента"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> Посмотреть</button></a>
-                                <a href="{{ url('/students/' . $item->id . '/edit') }}" title="Редактировать студента"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Редактировать</button></a>
+                                <a href="{{ url('/students/' . $item->id) }}" title="Посмотреть студента"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> 🔍</button></a>
+                                <a href="{{ url('/students/' . $item->id . '/edit') }}" title="Редактировать студента"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> ✏️</button></a>
 
                                 <form method="POST" action="{{ url('/students' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
                                     {{ method_field('DELETE') }}
                                     {{ csrf_field() }}
-                                    <button type="submit" class="btn btn-danger btn-sm" title="Удалить студента" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Удалить</button>
+                                    <button type="submit" class="btn btn-danger btn-sm" title="Удалить студента" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> ⌫</button>
                                 </form>
                             </td>
                         </tr>
