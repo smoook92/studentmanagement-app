@@ -14,7 +14,7 @@
         <!-- <input type="text" name="course_id" id="course_id" class="form-control"></br> -->
 
         <select name="course_id" id="course_id" class="form-control">
-          @foreach($payments as $id => $scrollno)
+          @foreach($courses as $id => $scrollno)
             <option value="{{ $id }}">{{ $scrollno }}</option>
           @endforeach
         </select></br>

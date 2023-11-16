@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <div class="card">
         <div class="card-header">
             <h2>Платежи</h2>
@@ -39,6 +39,7 @@
                                     {{ csrf_field() }}
                                     <button type="submit" class="btn btn-danger btn-sm" title="Удалить Платеж" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> ⌫</button>
                                 </form>
+                                <a href="{{ url('/report/report1/' . $item->id) }}" title="Редактировать Платеж"><button class="btn btn-success"><i class="fa fa-print" arria-hidden="true"></i> 🖶</button></a>
                             </td>
                         </tr>
                     @endforeach

@@ -26,7 +26,7 @@ class StudentController extends Controller
     {
         $input = $request->all();
         Student::create($input);
-        return redirect('student')->with('flash_message', 'Student Addedd!');
+        return redirect('students')->with('flash_message', 'Student Addedd!');
     }
 
     public function show(string $id): View

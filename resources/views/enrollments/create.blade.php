@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
- 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <div class="card">
   <div class="card-header">Зачисление</div>
   <div class="card-body">
@@ -11,10 +11,20 @@
         <input type="text" name="enroll_no" id="enroll_no" class="form-control"></br>
 
         <label>Группа</label></br>
-        <input type="text" name="batch_id" id="batch_id" class="form-control"></br>
+
+        <select name="batch_id" id="batch_id" class="form-control">
+          @foreach($batches as $id => $name)
+            <option value="{{ $id }}">{{ $name }}</option>
+          @endforeach
+        </select><br/>
 
         <label>Студент</label></br>
-        <input type="text" name="student_id" id="student_id" class="form-control"></br>
+
+        <select name="student_id" id="student_id" class="form-control">
+        @foreach($students as $id => $name)
+          <option value="{{ $id }}">{{ $name }}</option>
+        @endforeach
+         </select><br/>
 
         <label>Дата вступления</label></br>
         <input type="text" name="join_date" id="join_date" class="form-control"></br>
