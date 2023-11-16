@@ -46,7 +46,7 @@ class StudentController extends Controller
         $student = Student::find($id);
         $input = $request->all();
         $student->update($input);
-        return redirect('students')->with('flash_message', 'инфорамация студента обновлена!');  
+        return redirect('students')->with('flash_message', 'информация студента обновлена!');  
     }
     
     public function destroy(string $id): RedirectResponse
