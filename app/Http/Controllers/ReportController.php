@@ -14,7 +14,7 @@ class ReportController extends Controller
         $payment = Payment::find($pid);
         $pdf = App::make('dompdf.wrapper');
         $print = "<div style='margin:20px; padding:20px;>";
-        $print.= "<h1 align='center'>Payment receipt</h1>";
+        $print.= "<h1 align='center'>Квитанция об оплате</h1>";
         $print.= "<hr />";
         $print.= "<p> Receipt number: <b>" . $pid . "</b> </p>";
         $print.= "<p> Registration number: <b>" . $payment->paid_date . "</b></p>";
@@ -44,6 +44,7 @@ class ReportController extends Controller
 
         $print.= "</div>";
         $pdf->loadHTML($print);
+
         return $pdf->stream();
     }
   

@@ -1,6 +1,5 @@
 @extends('layout')
 @section('content')
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
  
 <div class="card">
   <div class="card-header">Страница Учителей</div>

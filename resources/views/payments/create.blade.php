@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
 <div class="card">
   <div class="card-header">Платежи</div>
   <div class="card-body">
@@ -17,10 +17,10 @@
 
         <label>Дата оплаты</label></br>
         <!-- <input type="text" name="course_id" id="course_id" class="form-control"></br> -->
-        <input type="text" name="paid_date" id="paid_date" class="form-control"></br>
+        <input type="text" name="paid_date" id="paid_date" class="form-control" required></br>
 
         <label>Сумма</label></br>
-        <input type="text" name="amount" id="amount" class="form-control"></br>
+        <input type="text" name="amount" id="amount" class="form-control" required></br>
 
         <input type="submit" value="Сохранить" class="btn btn-success"></br>
     </form>
