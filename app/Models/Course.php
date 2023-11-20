@@ -14,6 +14,18 @@ class Course extends Model
 
     public function duration()
     {
-        return $this->duration. " Месяц";
+        $months = $this->duration;
+        $monthName = '';
+
+        if ($months == 1) {
+            $monthName = 'месяц';
+        } elseif ($months >= 2 && $months <= 4) {
+            $monthName = 'месяца';
+        } else {
+            $monthName = 'месяцев';
+        }
+
+        return $months . ' ' . $monthName;
     }
 }
+?>
