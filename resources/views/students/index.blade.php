@@ -1,7 +1,8 @@
 @extends('layout')
 @section('content')
 
-<div class="card">
+<br />
+    <div class="card">
         <div class="card-header">
             <h2>Управление студентами</h2>
         </div>

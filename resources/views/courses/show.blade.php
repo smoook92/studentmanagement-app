@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
  
- 
+<br />
 <div class="card">
   <div class="card-header">Страница Курсов</div>
   <div class="card-body">
